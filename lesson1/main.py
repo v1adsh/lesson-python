@@ -33,3 +33,5 @@ elif operand == "*":
 elif operand == "/":
     result = int(a) / int(b)
     print(result)
+else:
+    print('Ошибка')
