@@ -15,23 +15,30 @@
 #
 # print(f'Your age is: {age}')
 
-import math
+#КАЛЬКУЛЯТОР
 
-a = input('Введите первое число: ')
-b = input('Введите второе число: ')
-operand = input('Выберите математическую операцию: "+" - сложение, "-" - вычитание, "*" - умножение, "/" - деление: ')
+# import math
+#
+# a = input('Введите первое число: ')
+# b = input('Введите второе число: ')
+# operand = input('Выберите математическую операцию: "+" - сложение, "-" - вычитание, "*" - умножение, "/" - деление: ')
+#
+# if operand == "+":
+#     result = int(a) + int(b)
+#     print(result)
+# elif operand == "-":
+#     result = int(a) - int(b)
+#     print(result)
+# elif operand == "*":
+#     result = int(a) * int(b)
+#     print(result)
+# elif operand == "/":
+#     result = int(a) / int(b)
+#     print(result)
+# else:
+#     print('Ошибка')
 
-if operand == "+":
-    result = int(a) + int(b)
-    print(result)
-elif operand == "-":
-    result = int(a) - int(b)
-    print(result)
-elif operand == "*":
-    result = int(a) * int(b)
-    print(result)
-elif operand == "/":
-    result = int(a) / int(b)
-    print(result)
-else:
-    print('Ошибка')
+from colorama import init
+from colorama import Fore, Back, Style
+init()
+print(Fore.BLACK + Back.WHITE + 'some text')
