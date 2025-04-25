@@ -1,37 +1,13 @@
-# from random import randint
-#
-# input_user = input("Select number: ")
-#
-# sys_num = randint(1, 5)
-#
-# if int(input_user) == int(sys_num):
-#     print("Congratulation!")
-# else:
-#     print("Fail")
-#
-# print(sys_num)
+from aiogram.filters import Command
+from aiogram import Bot, Dispatcher, types
 
-# age = input('Enter your age: ')
-#
-# print(f'Your age is: {age}')
+bot = Bot(token='7968373203:AAHV_utO29R5yupoK2S40y5XapWcfGTmGoM')
+dp = Dispatcher(bot = bot)
 
-import math
+@dp.message(Command('Start'))
+async def echo(message: types.Message):
+    await  message.answer(message.text)
 
-a = input('Введите первое число: ')
-b = input('Введите второе число: ')
-operand = input('Выберите математическую операцию: "+" - сложение, "-" - вычитание, "*" - умножение, "/" - деление: ')
+if __name__ == '__main__':
+    dp.start_polling(bot, skip_updates=True)
 
-if operand == "+":
-    result = int(a) + int(b)
-    print(result)
-elif operand == "-":
-    result = int(a) - int(b)
-    print(result)
-elif operand == "*":
-    result = int(a) * int(b)
-    print(result)
-elif operand == "/":
-    result = int(a) / int(b)
-    print(result)
-else:
-    print('Ошибка')
