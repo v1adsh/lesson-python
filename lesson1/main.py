@@ -15,30 +15,23 @@
 #
 # print(f'Your age is: {age}')
 
-#КАЛЬКУЛЯТОР
+import math
 
-# import math
-#
-# a = input('Введите первое число: ')
-# b = input('Введите второе число: ')
-# operand = input('Выберите математическую операцию: "+" - сложение, "-" - вычитание, "*" - умножение, "/" - деление: ')
-#
-# if operand == "+":
-#     result = int(a) + int(b)
-#     print(result)
-# elif operand == "-":
-#     result = int(a) - int(b)
-#     print(result)
-# elif operand == "*":
-#     result = int(a) * int(b)
-#     print(result)
-# elif operand == "/":
-#     result = int(a) / int(b)
-#     print(result)
-# else:
-#     print('Ошибка')
+a = input('Введите первое число: ')
+b = input('Введите второе число: ')
+operand = input('Выберите математическую операцию: "+" - сложение, "-" - вычитание, "*" - умножение, "/" - деление: ')
 
-from colorama import init
-from colorama import Fore, Back, Style
-init()
-print(Fore.BLACK + Back.WHITE + 'some text')
+if operand == "+":
+    result = int(a) + int(b)
+    print(result)
+elif operand == "-":
+    result = int(a) - int(b)
+    print(result)
+elif operand == "*":
+    result = int(a) * int(b)
+    print(result)
+elif operand == "/":
+    result = int(a) / int(b)
+    print(result)
+else:
+    print('Ошибка')
